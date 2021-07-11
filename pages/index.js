@@ -49,7 +49,7 @@ export default function Home() {
             type="text" 
             className="outline-none w-full"
             placeholder="Enter name of document..."
-            onkeyDown={(e) => e.key === "Enter" && createDocument()}
+            onKeyDown={(e) => e.key === "Enter" && createDocument()}
           />
         </ModalBody>
         <ModalFooter>
@@ -84,8 +84,8 @@ export default function Home() {
       <Header/>
       {modal}
      
-      <section className="bg-[#F8F9FA] pb-10 px-10 ">
-        <div className="max-w-3xl mx-auto">
+      <section className="bg-[#F8F9FA] pb-10 px-10">
+        <div className="lg:max-w-3xl mx-auto">
           <div className="flex items-center justify-between py-6">
             <h2 className="text-gray-700 text-lg">start a new document</h2>
 
